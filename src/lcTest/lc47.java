@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * @author lenovo
  * 力扣第47题 全排列2
+ * 类型：回溯+去重
  * 题目链接：
  * https://leetcode-cn.com/problems/permutations-ii/
  * 讲解：
