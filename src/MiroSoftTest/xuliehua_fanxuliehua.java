@@ -52,7 +52,7 @@ class TreeNode{
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode(){
+    TreeNode(int i, Object o){
 
     }
     TreeNode(int val){

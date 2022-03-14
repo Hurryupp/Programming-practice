@@ -42,13 +42,6 @@ public class rudu {
                     }
                 }
 
-//                System.out.println("入度表");
-//                for (int l = 0; l < map.length; l++) {
-//                    System.out.print(map[l]+" ");
-//                }
-//                System.out.println();
-
-
                 //递归下一层
                 helper(map,k+1,v,a,b,sum,used);
                 //回退
@@ -57,11 +50,6 @@ public class rudu {
                         map[b[j]] += 1;
                     }
                 }
-//                System.out.println("回退入度表");
-//                for (int l = 0; l < map.length; l++) {
-//                    System.out.print(map[l]+" ");
-//                }
-//                System.out.println();
 
                 //更新入度
                 used[i] = false;
