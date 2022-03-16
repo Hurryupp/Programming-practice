@@ -5,8 +5,9 @@ import org.junit.Test;
 /**
  * @author lenovo
  * 字符串括号全部匹配的最长子字符串长度
+ * 双指针，只需要遍历两遍
  */
-public class zifuchuankuohao {
+public class P7 {
     @Test
     public void test(){
         String str = "())()()()";

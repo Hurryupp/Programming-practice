@@ -11,7 +11,7 @@ import java.util.List;
  * @author lenovo
  * 复原IP地址
  */
-public class IPv4 {
+public class P10 {
     @Test
     public void test(){
         List<String> list = restoreIpAddresses("101023");

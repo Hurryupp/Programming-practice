@@ -2,7 +2,7 @@ package MiroSoftTest;
 
 import org.junit.Test;
 
-public class daishu {
+public class P37 {
     @Test
     public void test(){
         int[] nums = {0,0,0,0,0,0,1,0,1,1,0,1,1,1,0,0,0,0};

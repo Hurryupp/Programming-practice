@@ -2,10 +2,10 @@ package MiroSoftTest;
 
 import org.junit.Test;
 
-public class zuida {
+public class P12 {
     @Test
     public void test(){
-        int maxP = maxP(new int[]{1, -2, 3,-2});
+        int maxP = maxP(new int[]{1, 2, 3,-2});
         System.out.println(maxP);
     }
     public int maxP(int[] nums){

@@ -96,36 +96,6 @@ public class P29 {
 //        }
 //    }
 
-    //使用Arrays函数，Arrays函数底层使用的是优化过的归并算法,空间复杂度依旧是O(n)
-//    public ListNode sortList(ListNode head) {
-//        ListNode tmp = head;
-//        ListNode tmp1 = head;
-//        int count = 0;
-//        while (tmp!=null){
-//            count++;
-//            tmp = tmp.next;
-//        }
-//        ListNode[] nodes = new ListNode[count];
-//        for (int i = 0; i < nodes.length; i++) {
-//            nodes[i] = tmp1;
-//            tmp1 = tmp1.next;
-//        }
-//        Arrays.sort(nodes, new Comparator<ListNode>() {
-//            @Override
-//            public int compare(ListNode o1, ListNode o2) {
-//                return o1.val - o2.val;
-//            }
-//        });
-//        for (int i = 0; i < nodes.length; i++) {
-//            if (i < nodes.length - 1) {
-//                nodes[i].next = nodes[i+1];
-//            }
-//            else {
-//                nodes[i].next = null;
-//            }
-//        }
-//        return nodes[0];
-//    }
 
     //使用自底向上的归并，时间复杂度O(logn)，空间复杂度为O(1)   仔细看要掌握
         public ListNode sortList(ListNode head) {

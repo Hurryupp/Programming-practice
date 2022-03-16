@@ -2,7 +2,8 @@ package MiroSoftTest;
 
 import org.junit.Test;
 
-public class shiliu28 {
+//十六转八进制
+public class P6 {
     @Test
     public void test(){
         String s = "a58F";

@@ -17,9 +17,6 @@ public class Xci {
             int frequency = j - i;
             minOperations += Math.min(Math.abs(data[i] - frequency), frequency);
         }
-
-        LinkedList<Integer> integers = new LinkedList<>();
-
         return minOperations;
 
 

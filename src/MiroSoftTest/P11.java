@@ -2,7 +2,7 @@ package MiroSoftTest;
 
 import org.junit.Test;
 
-public class lianbiaohe {
+public class P11 {
     @Test
     public void test(){
         //第一组
@@ -21,7 +21,7 @@ public class lianbiaohe {
         }
 
     }
-
+    //合并函数
     public ListNode helper(ListNode l2,ListNode l1){
         int flag = 0;
         int jin = 0;
