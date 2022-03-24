@@ -17,31 +17,34 @@ public class lc912 {
         Sort(nums,0,nums.length-1);
         System.out.println(Arrays.toString(nums));
     }
-    int[] temp; //辅助数组
+    private int[] temp;
     public void Sort(int[] nums,int low,int high){
-        if (low >= high) {
+        //拆分函数
+        if (low >=high){
             return;
         }
         int mid = (low+high)/2;
-        //递归调用左子树
-        Sort(nums,low,mid);
-        Sort(nums,mid+1,high);
-        Merge(nums,low,mid+1,high);
+        Sort(nums,low,mid); //递归调用左半边
+        Sort(nums,mid+1,high); //递归调用右半边
+        Merge(nums,low,mid+1,high+1); //左右两部分合起来
     }
-    public void  Merge(int[] nums,int low ,int mid , int high){
-        for (int i = low;i<=high;i++){
+    public void Merge(int[] nums,int low,int mid,int high){
+        //合并函数
+        for (int i = low;i<high;i++){
             temp[i] = nums[i];
         }
-        int start1 = low; //左边的指针
-        int start2 = mid; //右边的指针
-        for (int i = low; i <= high; i++) {
+        //双指针合并
+        int start1 = low;
+        int start2 = mid;
+        for (int i = low; i<high;i++){
             if (start1 == mid) {
                 nums[i] = temp[start2++];
-            } else if (start2 == high+1) {
+            } else if (start2 == high) {
                 nums[i] = temp[start1++];
             }else if (temp[start1]>temp[start2]){
                 nums[i] = temp[start2++];
-            }else {
+            }
+            else {
                 nums[i] = temp[start1++];
             }
         }
