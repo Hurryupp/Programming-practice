@@ -11,6 +11,7 @@ public class lc72 {
     public int minDistance(String word1, String word2) {
         int len1 = word1.length();
         int len2 = word2.length();
+
         //判空
         if (len1 == 0 || len2 == 0) {
             return len1+len2;
