@@ -15,7 +15,6 @@ public class lc491 {
     }
     List<List<Integer>> ans = new ArrayList<>();
     LinkedList<Integer> res = new LinkedList<>();
-    //HashSet<List<Integer>> set = new HashSet<>();
     public List<List<Integer>> findSubsequences(int[] nums) {
         helper(nums,0);
         return ans;
