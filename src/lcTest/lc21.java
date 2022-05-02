@@ -13,6 +13,7 @@ public class lc21 {
 
     }
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+//        new StringBuffer()
         //递归结束条件
         if (list1==null&&list2==null) return null;
         else if (list1==null) return list2;
